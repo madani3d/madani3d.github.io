@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LogicX Crossword - Privacy Policy</title>
+
+<style>
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    max-width:900px;
+    margin:40px auto;
+    padding:20px;
+    line-height:1.8;
+    color:#333;
+    background:#fafafa;
+}
+h1{
+    color:#222;
+}
+h2{
+    margin-top:30px;
+    color:#444;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>Privacy Policy</h1>
+
+<p><strong>Effective Date:</strong> June 26, 2026</p>
+
+<p>
+LogicX Crossword ("the App") respects your privacy.
+This Privacy Policy explains what information may be collected when using the App.
+</p>
+
+<h2>Information Collection</h2>
+
+<p>
+The App does not require users to create an account or sign in.
+</p>
+
+<p>
+The App does not collect personal information such as your name, email address, phone number, or home address.
+</p>
+
+<p>
+If advertising or analytics services are enabled, anonymous technical information such as device information, app performance, or advertising identifiers may be collected automatically by third-party services.
+</p>
+
+<h2>Third-Party Services</h2>
+
+<p>The App may use the following services:</p>
+
+<ul>
+<li>Google Play Services</li>
+<li>Google AdMob</li>
+<li>Firebase Analytics</li>
+<li>Firebase Crashlytics</li>
+</ul>
+
+<p>
+These services may collect anonymous information according to their own privacy policies.
+</p>
+
+<h2>Children's Privacy</h2>
+
+<p>
+The App does not knowingly collect personal information from children.
+</p>
+
+<h2>Changes to This Privacy Policy</h2>
+
+<p>
+This Privacy Policy may be updated from time to time.
+Any changes will be published on this page with an updated effective date.
+</p>
+
+</body>
+</html>
