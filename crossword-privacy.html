@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - Crossword Puzzles</title>
+    <title>Privacy Policy - Crossword Puzzles | سياسة الخصوصية</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -28,129 +28,315 @@
         a { color: #3498db; text-decoration: none; }
         a:hover { text-decoration: underline; }
         table { width: 100%; border-collapse: collapse; margin: 16px 0; }
-        th, td { border: 1px solid #e4e4e4; padding: 10px 12px; text-align: left; font-size: 15px; }
+        th, td {
+            border: 1px solid #e4e4e4;
+            padding: 10px 12px;
+            text-align: start;
+            font-size: 15px;
+        }
         th { background: #f4f7f8; color: #2c3e50; }
         .note {
             background: #f4f9fc;
-            border-left: 4px solid #3498db;
+            border-inline-start: 4px solid #3498db;
             padding: 14px 18px;
             border-radius: 6px;
             margin: 18px 0;
         }
         footer { margin-top: 34px; border-top: 1px solid #eee; padding-top: 16px; font-size: 14px; color: #777; }
+
+        /* Language switcher */
+        .lang-switch {
+            display: flex;
+            gap: 8px;
+            justify-content: flex-end;
+            margin-bottom: 18px;
+        }
+        .lang-switch button {
+            font-family: inherit;
+            font-size: 15px;
+            padding: 8px 18px;
+            border: 1px solid #d8dee2;
+            background: #fff;
+            color: #34495e;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: background .15s, color .15s, border-color .15s;
+        }
+        .lang-switch button:hover { border-color: #3498db; color: #3498db; }
+        .lang-switch button[aria-pressed="true"] {
+            background: #3498db;
+            border-color: #3498db;
+            color: #fff;
+        }
+        .policy[hidden] { display: none; }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <h1>Privacy Policy for &ldquo;Crossword Puzzles&rdquo;</h1>
-    <p>
-        <strong>Developer:</strong> SAV Apps<br>
-        <strong>App name:</strong> Crossword Puzzles (&#1603;&#1604;&#1605;&#1575;&#1578; &#1605;&#1578;&#1602;&#1575;&#1591;&#1593;&#1577;)<br>
-        <strong>Package ID:</strong> com.Logic.crossword<br>
-        <strong>Last updated:</strong> 22 August 2026
-    </p>
 
-    <p>&ldquo;Crossword Puzzles&rdquo; is a free, ad-supported puzzle game published by <strong>SAV Apps</strong>. This policy explains what data is collected when you use the app, who collects it, why, and what control you have over it.</p>
-
-    <div class="note">
-        <strong>In short:</strong> We &mdash; SAV Apps &mdash; do not operate servers, and we neither collect nor receive your data. Your game progress is stored only on your device. However, the app uses Google services (advertising and analytics), and those services <em>do</em> collect data, including your advertising ID, which is treated as personal data under European privacy law.
+    <div class="lang-switch">
+        <button type="button" data-lang="en" aria-pressed="true">English</button>
+        <button type="button" data-lang="ar" aria-pressed="false">العربية</button>
     </div>
 
-    <h2>1. Data stored on your device</h2>
-    <p>The app saves the following in your device&rsquo;s local storage only. <strong>This data is never sent to us or to anyone else, and we cannot access it.</strong> It is deleted entirely when you uninstall the app or clear its data:</p>
-    <ul>
-        <li>Completed levels and unlocked levels</li>
-        <li>Your progress within the current level</li>
-        <li>Your star and hint counts</li>
-        <li>Your sound on/off preference</li>
-        <li>Internal counters used to pace ads and reminders</li>
-    </ul>
+    <!-- ==================== ENGLISH ==================== -->
+    <div class="policy" id="policy-en">
+        <h1>Privacy Policy for &ldquo;Crossword Puzzles&rdquo;</h1>
+        <p>
+            <strong>Developer:</strong> SAV Apps<br>
+            <strong>App name:</strong> Crossword Puzzles (كلمات متقاطعة)<br>
+            <strong>Package ID:</strong> com.Logic.crossword<br>
+            <strong>Last updated:</strong> 22 August 2026
+        </p>
 
-    <h2>2. Data collected by third parties</h2>
-    <p>The app uses the following Google services, which collect data in accordance with their own policies:</p>
+        <p>&ldquo;Crossword Puzzles&rdquo; is a free, ad-supported puzzle game published by <strong>SAV Apps</strong>. This policy explains what data is collected when you use the app, who collects it, why, and what control you have over it.</p>
 
-    <table>
-        <tr>
-            <th>Service</th>
-            <th>Purpose</th>
-            <th>Examples of data collected</th>
-        </tr>
-        <tr>
-            <td>Google AdMob</td>
-            <td>Serving, measuring and fraud-proofing ads</td>
-            <td>Advertising ID, IP address, device type and OS version, ad interactions</td>
-        </tr>
-        <tr>
-            <td>Google Analytics for Firebase</td>
-            <td>Aggregated usage statistics used to improve the game</td>
-            <td>Pseudonymous app instance ID, usage events, device model, approximate country</td>
-        </tr>
-        <tr>
-            <td>Google Play services</td>
-            <td>Core functionality and crash reporting</td>
-            <td>Log data, device information, date and time of use</td>
-        </tr>
-    </table>
+        <div class="note">
+            <strong>In short:</strong> We &mdash; SAV Apps &mdash; do not operate servers, and we neither collect nor receive your data. Your game progress is stored only on your device. However, the app uses Google services (advertising and analytics), and those services <em>do</em> collect data, including your advertising ID, which is treated as personal data under European privacy law.
+        </div>
 
-    <p>Privacy policies for these services:</p>
-    <ul>
-        <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></li>
-        <li><a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">How AdMob uses data</a></li>
-        <li><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy</a></li>
-    </ul>
+        <h2>1. Data stored on your device</h2>
+        <p>The app saves the following in your device&rsquo;s local storage only. <strong>This data is never sent to us or to anyone else, and we cannot access it.</strong> It is deleted entirely when you uninstall the app or clear its data:</p>
+        <ul>
+            <li>Completed levels and unlocked levels</li>
+            <li>Your progress within the current level</li>
+            <li>Your star and hint counts</li>
+            <li>Your sound on/off preference</li>
+            <li>Internal counters used to pace ads and reminders</li>
+        </ul>
 
-    <h2>3. Advertising and consent</h2>
+        <h2>2. Data collected by third parties</h2>
+        <p>The app uses the following Google services, which collect data in accordance with their own policies:</p>
+        <table>
+            <tr>
+                <th>Service</th>
+                <th>Purpose</th>
+                <th>Examples of data collected</th>
+            </tr>
+            <tr>
+                <td>Google AdMob</td>
+                <td>Serving, measuring and fraud-proofing ads</td>
+                <td>Advertising ID, IP address, device type and OS version, ad interactions</td>
+            </tr>
+            <tr>
+                <td>Google Analytics for Firebase</td>
+                <td>Aggregated usage statistics used to improve the game</td>
+                <td>Pseudonymous app instance ID, usage events, device model, approximate country</td>
+            </tr>
+            <tr>
+                <td>Google Play services</td>
+                <td>Core functionality and crash reporting</td>
+                <td>Log data, device information, date and time of use</td>
+            </tr>
+        </table>
+        <p>Privacy policies for these services:</p>
+        <ul>
+            <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></li>
+            <li><a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">How AdMob uses data</a></li>
+            <li><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy</a></li>
+        </ul>
 
-    <h3>3.1 European Economic Area, United Kingdom and Switzerland</h3>
-    <p>If you are located in these regions, a <strong>consent screen</strong> provided by Google&rsquo;s User Messaging Platform (UMP) is shown the first time you launch the app. The legal basis for processing your data for advertising purposes is <strong>your consent</strong>, and no ad request is made before you have made your choice.</p>
-    <ul>
-        <li><strong>If you consent:</strong> you may be shown personalised ads based on your interests.</li>
-        <li><strong>If you decline:</strong> you are shown non-personalised ads that do not rely on an interest profile, and the app remains completely free.</li>
-    </ul>
-    <p><strong>To change your choice or withdraw consent at any time:</strong> open the app and tap the <strong>&ldquo;Privacy options&rdquo;</strong> button (the shield icon) at the bottom of the main screen. Withdrawing consent does not affect the lawfulness of processing carried out beforehand.</p>
+        <h2>3. Advertising and consent</h2>
+        <h3>3.1 European Economic Area, United Kingdom and Switzerland</h3>
+        <p>If you are located in these regions, a <strong>consent screen</strong> provided by Google&rsquo;s User Messaging Platform (UMP) is shown the first time you launch the app. The legal basis for processing your data for advertising purposes is <strong>your consent</strong>, and no ad request is made before you have made your choice.</p>
+        <ul>
+            <li><strong>If you consent:</strong> you may be shown personalised ads based on your interests.</li>
+            <li><strong>If you decline:</strong> you are shown non-personalised ads that do not rely on an interest profile, and the app remains completely free.</li>
+        </ul>
+        <p><strong>To change your choice or withdraw consent at any time:</strong> open the app and tap the <strong>&ldquo;Privacy options&rdquo;</strong> button (the shield icon) at the bottom of the main screen. Withdrawing consent does not affect the lawfulness of processing carried out beforehand.</p>
 
-    <h3>3.2 United States residents</h3>
-    <p>Your state&rsquo;s laws &mdash; such as the California Consumer Privacy Act (CCPA/CPRA) and comparable statutes &mdash; may give you the right to opt out of the &ldquo;sale&rdquo; or &ldquo;sharing&rdquo; of your personal information for behavioural advertising. You can exercise this right inside the app through the <strong>&ldquo;Privacy options&rdquo;</strong> button, or by contacting us at the email address below. We do not receive any monetary payment in exchange for your data, and we will not discriminate against you for exercising these rights.</p>
+        <h3>3.2 United States residents</h3>
+        <p>Your state&rsquo;s laws &mdash; such as the California Consumer Privacy Act (CCPA/CPRA) and comparable statutes &mdash; may give you the right to opt out of the &ldquo;sale&rdquo; or &ldquo;sharing&rdquo; of your personal information for behavioural advertising. You can exercise this right inside the app through the <strong>&ldquo;Privacy options&rdquo;</strong> button, or by contacting us at the email address below. We do not receive any monetary payment in exchange for your data, and we will not discriminate against you for exercising these rights.</p>
 
-    <h3>3.3 Controlling your advertising ID on your device</h3>
-    <p>Regardless of your choice inside the app, you can at any time go to your device settings:<br>
-    <strong>Settings &rarr; Google &rarr; Ads</strong> &mdash; where you can <strong>reset your advertising ID</strong> or <strong>delete it permanently</strong>, and turn off ad personalisation system-wide.</p>
+        <h3>3.3 Controlling your advertising ID on your device</h3>
+        <p>Regardless of your choice inside the app, you can at any time go to your device settings:<br>
+        <strong>Settings &rarr; Google &rarr; Ads</strong> &mdash; where you can <strong>reset your advertising ID</strong> or <strong>delete it permanently</strong>, and turn off ad personalisation system-wide.</p>
 
-    <h2>4. Notifications</h2>
-    <p>The app can send <strong>local notifications</strong> reminding you to continue playing after a period of inactivity. These notifications are scheduled on your device, never pass through any server, and contain no information about you. Notification permission is requested explicitly, and you may decline it or turn it off later in your system settings without affecting the game.</p>
+        <h2>4. Notifications</h2>
+        <p>The app can send <strong>local notifications</strong> reminding you to continue playing after a period of inactivity. These notifications are scheduled on your device, never pass through any server, and contain no information about you. Notification permission is requested explicitly, and you may decline it or turn it off later in your system settings without affecting the game.</p>
 
-    <h2>5. Log and crash data</h2>
-    <p>If a fault occurs, log data may be collected through the third-party services listed above &mdash; such as your IP address, device model, OS version and time of use &mdash; in order to diagnose the problem and improve performance.</p>
+        <h2>5. Log and crash data</h2>
+        <p>If a fault occurs, log data may be collected through the third-party services listed above &mdash; such as your IP address, device model, OS version and time of use &mdash; in order to diagnose the problem and improve performance.</p>
 
-    <h2>6. Links and external content</h2>
-    <p>Ads may take you to websites or apps that we neither own nor control. We are not responsible for their content or practices, and we recommend reviewing the privacy policy of each of them.</p>
+        <h2>6. Links and external content</h2>
+        <p>Ads may take you to websites or apps that we neither own nor control. We are not responsible for their content or practices, and we recommend reviewing the privacy policy of each of them.</p>
 
-    <h2>7. Children&rsquo;s privacy</h2>
-    <p>This app is <strong>not directed to children</strong>; its target audience is adult users. We do not knowingly collect any information from children under 13 (or under the applicable age in your country, which may be up to 16 in some European countries). If you are a parent or guardian and believe your child has provided data through the app, please contact us at the email address below and we will take the necessary steps to delete it.</p>
+        <h2>7. Children&rsquo;s privacy</h2>
+        <p>This app is <strong>not directed to children</strong>; its target audience is adult users. We do not knowingly collect any information from children under 13 (or under the applicable age in your country, which may be up to 16 in some European countries). If you are a parent or guardian and believe your child has provided data through the app, please contact us at the email address below and we will take the necessary steps to delete it.</p>
 
-    <h2>8. Data retention</h2>
-    <p>Game data stored on your device remains for as long as the app is installed and is erased when you uninstall it or clear the app&rsquo;s data. Data collected by Google is subject to the retention periods set out in its own policies.</p>
+        <h2>8. Data retention</h2>
+        <p>Game data stored on your device remains for as long as the app is installed and is erased when you uninstall it or clear the app&rsquo;s data. Data collected by Google is subject to the retention periods set out in its own policies.</p>
 
-    <h2>9. Your rights</h2>
-    <p>Depending on the laws that apply to you &mdash; including the General Data Protection Regulation (GDPR) &mdash; you may have the right to access your data, correct it, delete it, restrict or object to its processing, port it, or withdraw your consent at any time. You also have the right to lodge a complaint with the supervisory authority in your country.</p>
-    <p>Because we hold no data on our own servers, most of these rights are exercised directly through your device settings and the &ldquo;Privacy options&rdquo; button inside the app, or through Google as the party that collects the data. We are happy to assist with any request you send us.</p>
+        <h2>9. Your rights</h2>
+        <p>Depending on the laws that apply to you &mdash; including the General Data Protection Regulation (GDPR) &mdash; you may have the right to access your data, correct it, delete it, restrict or object to its processing, port it, or withdraw your consent at any time. You also have the right to lodge a complaint with the supervisory authority in your country.</p>
+        <p>Because we hold no data on our own servers, most of these rights are exercised directly through your device settings and the &ldquo;Privacy options&rdquo; button inside the app, or through Google as the party that collects the data. We are happy to assist with any request you send us.</p>
 
-    <h2>10. Data security</h2>
-    <p>Because the app does not send your game data to any server of ours, that data stays on your device and is protected by your device&rsquo;s own security. That said, no method of electronic transmission or storage is 100% secure.</p>
+        <h2>10. Data security</h2>
+        <p>Because the app does not send your game data to any server of ours, that data stays on your device and is protected by your device&rsquo;s own security. That said, no method of electronic transmission or storage is 100% secure.</p>
 
-    <h2>11. Changes to this policy</h2>
-    <p>We may update this policy from time to time. Any update will be posted on this page and the &ldquo;Last updated&rdquo; date above will be revised, so we encourage you to review it periodically.</p>
+        <h2>11. Changes to this policy</h2>
+        <p>We may update this policy from time to time. Any update will be posted on this page and the &ldquo;Last updated&rdquo; date above will be revised, so we encourage you to review it periodically.</p>
 
-    <h2>12. Contact us</h2>
-    <p>For any question or request relating to privacy or to exercising your rights:</p>
-    <p><strong>SAV Apps</strong><br>
-    Email: <a href="mailto:madanigfx@gmail.com">madanigfx@gmail.com</a></p>
+        <h2>12. Contact us</h2>
+        <p>For any question or request relating to privacy or to exercising your rights:</p>
+        <p><strong>SAV Apps</strong><br>
+        Email: <a href="mailto:madanigfx@gmail.com">madanigfx@gmail.com</a></p>
 
-    <footer>
-        &copy; 2026 SAV Apps &mdash; All rights reserved.
-    </footer>
+        <footer>&copy; 2026 SAV Apps &mdash; All rights reserved.</footer>
+    </div>
+
+    <!-- ==================== ARABIC ==================== -->
+    <div class="policy" id="policy-ar" hidden>
+        <h1>سياسة الخصوصية لتطبيق «كلمات متقاطعة»</h1>
+        <p>
+            <strong>المطوّر:</strong> SAV Apps<br>
+            <strong>اسم التطبيق:</strong> كلمات متقاطعة<br>
+            <strong>معرّف الحزمة:</strong> com.Logic.crossword<br>
+            <strong>تاريخ آخر تحديث:</strong> 22 أغسطس 2026
+        </p>
+
+        <p>تطبيق «كلمات متقاطعة» تطبيق ألغاز مجاني مدعوم بالإعلانات، تُصدره <strong>SAV Apps</strong>. توضّح هذه السياسة ما البيانات التي تُجمع عند استخدامك للتطبيق، ومن يجمعها، ولأي غرض، وما الحقوق المتاحة لك للتحكم بها.</p>
+
+        <div class="note">
+            <strong>باختصار:</strong> نحن — SAV Apps — لا نُشغّل خوادم ولا نجمع بياناتك ولا نستقبلها. يُحفظ تقدّمك في اللعبة على جهازك فقط. غير أن التطبيق يستخدم خدمات من Google (الإعلانات والتحليلات)، وهذه الخدمات <em>تجمع</em> بيانات — من بينها معرّف الإعلانات — ويُعدّ ذلك بياناً شخصياً بموجب قوانين الخصوصية الأوروبية.
+        </div>
+
+        <h2>1. البيانات المحفوظة على جهازك</h2>
+        <p>يحفظ التطبيق التالي في الذاكرة المحلية لجهازك فقط. <strong>هذه البيانات لا تُرسل إلينا ولا إلى أي جهة، ولا يمكننا الاطلاع عليها</strong>، وتُحذف بالكامل عند حذف التطبيق أو مسح بياناته:</p>
+        <ul>
+            <li>المراحل المكتملة والمراحل المفتوحة</li>
+            <li>تقدّمك داخل المرحلة الحالية</li>
+            <li>عدد النجوم والمساعدات</li>
+            <li>إعداد كتم الصوت</li>
+            <li>عدّادات داخلية لتنظيم توقيت الإعلانات والإشعارات</li>
+        </ul>
+
+        <h2>2. البيانات التي تجمعها جهات خارجية</h2>
+        <p>يستخدم التطبيق خدمات Google التالية، وهي تجمع بيانات وفقاً لسياساتها الخاصة:</p>
+        <table>
+            <tr>
+                <th>الخدمة</th>
+                <th>الغرض</th>
+                <th>أمثلة على ما تجمعه</th>
+            </tr>
+            <tr>
+                <td>Google AdMob</td>
+                <td>عرض الإعلانات وقياسها ومنع الاحتيال</td>
+                <td>معرّف الإعلانات، عنوان IP، نوع الجهاز ونظام التشغيل، التفاعل مع الإعلان</td>
+            </tr>
+            <tr>
+                <td>Google Analytics for Firebase</td>
+                <td>إحصاءات استخدام مجمّعة لتحسين اللعبة</td>
+                <td>معرّف تطبيق مستعار، أحداث الاستخدام، طراز الجهاز، البلد التقريبي</td>
+            </tr>
+            <tr>
+                <td>خدمات Google Play</td>
+                <td>تشغيل المكوّنات الأساسية وتقارير الأعطال</td>
+                <td>بيانات السجل، معلومات الجهاز، وقت وتاريخ الاستخدام</td>
+            </tr>
+        </table>
+        <p>سياسات الخصوصية الخاصة بهذه الخدمات:</p>
+        <ul>
+            <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">سياسة خصوصية Google</a></li>
+            <li><a href="https://support.google.com/admob/answer/6128543?hl=ar" target="_blank" rel="noopener">كيفية استخدام AdMob للبيانات</a></li>
+            <li><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">خصوصية Firebase</a></li>
+        </ul>
+
+        <h2>3. الإعلانات والموافقة</h2>
+        <h3>3.1 المنطقة الاقتصادية الأوروبية والمملكة المتحدة وسويسرا</h3>
+        <p>إذا كنت في هذه المناطق، تظهر لك عند أول تشغيل <strong>شاشة موافقة</strong> صادرة عن منصة رسائل المستخدم من Google (UMP). الأساس القانوني لمعالجة بياناتك لأغراض الإعلانات هو <strong>موافقتك</strong>، ولا يُطلب أي إعلان قبل أن تُبدي اختيارك.</p>
+        <ul>
+            <li><strong>إذا وافقت:</strong> قد تظهر لك إعلانات مخصّصة مبنية على اهتماماتك.</li>
+            <li><strong>إذا رفضت:</strong> تظهر إعلانات غير مخصّصة لا تعتمد على ملف اهتمامات، ويبقى التطبيق مجانياً بالكامل.</li>
+        </ul>
+        <p><strong>لتغيير اختيارك أو سحب موافقتك في أي وقت:</strong> افتح التطبيق، ثم اضغط زر <strong>«خيارات الخصوصية»</strong> (أيقونة الدرع) أسفل الشاشة الرئيسية. سحب الموافقة لا يؤثر على مشروعية المعالجة التي تمّت قبله.</p>
+
+        <h3>3.2 المقيمون في الولايات المتحدة</h3>
+        <p>قد تمنحك قوانين ولايتك — مثل قانون خصوصية المستهلك في كاليفورنيا (CCPA/CPRA) وما يماثله — الحق في رفض «بيع» بياناتك الشخصية أو «مشاركتها» لأغراض الإعلانات السلوكية. يمكنك ممارسة هذا الحق من داخل التطبيق عبر زر <strong>«خيارات الخصوصية»</strong>، أو بمراسلتنا على البريد أدناه. نحن لا نتقاضى أي مقابل مادي لقاء بياناتك، ولن نميّز ضدك بسبب ممارستك لهذه الحقوق.</p>
+
+        <h3>3.3 التحكم بمعرّف الإعلانات على جهازك</h3>
+        <p>بصرف النظر عن اختيارك داخل التطبيق، يمكنك في أي وقت من إعدادات الجهاز:<br>
+        <strong>الإعدادات ← Google ← الإعلانات</strong> — ومنها يمكنك <strong>إعادة تعيين معرّف الإعلانات</strong> أو <strong>حذفه نهائياً</strong>، وكذلك إيقاف تخصيص الإعلانات على مستوى النظام.</p>
+
+        <h2>4. الإشعارات</h2>
+        <p>يستطيع التطبيق إرسال <strong>إشعارات محلية</strong> لتذكيرك بمواصلة اللعب بعد فترة من عدم الاستخدام. تُجدول هذه الإشعارات على جهازك ولا تمر بأي خادم ولا تتضمن أي بيانات عنك. يُطلب إذن الإشعارات منك صراحةً، ويمكنك رفضه أو إيقافه لاحقاً من إعدادات النظام دون أن يتأثر عمل اللعبة.</p>
+
+        <h2>5. بيانات السجل والأعطال</h2>
+        <p>عند حدوث خلل، قد تُجمع بيانات سجل عبر خدمات الجهات الخارجية المذكورة أعلاه — مثل عنوان IP وطراز الجهاز وإصدار النظام ووقت الاستخدام — لتشخيص المشكلة وتحسين الأداء.</p>
+
+        <h2>6. الروابط والمحتوى الخارجي</h2>
+        <p>قد تنقلك الإعلانات إلى مواقع أو تطبيقات لا نملكها ولا نتحكم بها. لا نتحمّل مسؤولية محتواها أو ممارساتها، وننصح بمراجعة سياسة الخصوصية الخاصة بكل منها.</p>
+
+        <h2>7. خصوصية الأطفال</h2>
+        <p>هذا التطبيق <strong>غير موجّه للأطفال</strong>، وجمهوره المستهدف هو المستخدمون البالغون. نحن لا نجمع عن قصد أي معلومات من الأطفال دون سن 13 عاماً (أو دون السن المعتمدة في بلدك، وقد تصل إلى 16 عاماً في بعض الدول الأوروبية). إذا كنت وليّ أمر وتعتقد أن طفلك قدّم بيانات عبر التطبيق، فراسلنا على البريد أدناه وسنتخذ ما يلزم لحذفها.</p>
+
+        <h2>8. الاحتفاظ بالبيانات</h2>
+        <p>بيانات اللعب المحفوظة على جهازك تبقى ما دام التطبيق مثبّتاً، وتُمحى عند حذفه أو مسح بيانات التطبيق. أما البيانات التي تجمعها Google فتخضع لمُدد الاحتفاظ المنصوص عليها في سياساتها.</p>
+
+        <h2>9. حقوقك</h2>
+        <p>وفقاً للقوانين المطبّقة عليك — ومنها اللائحة العامة لحماية البيانات (GDPR) — قد يحق لك: الوصول إلى بياناتك، أو تصحيحها، أو حذفها، أو تقييد معالجتها، أو الاعتراض عليها، أو نقلها، أو سحب موافقتك في أي وقت. ولك كذلك الحق في تقديم شكوى إلى الجهة الرقابية المختصة في بلدك.</p>
+        <p>بما أننا لا نحتفظ بأي بيانات على خوادمنا، فإن أغلب هذه الحقوق تُمارَس مباشرةً عبر إعدادات جهازك وزر «خيارات الخصوصية» داخل التطبيق، أو عبر Google بصفتها الجهة التي تجمع البيانات. ونحن مستعدون لمساعدتك في أي طلب تتواصل معنا بشأنه.</p>
+
+        <h2>10. أمان البيانات</h2>
+        <p>لأن التطبيق لا يرسل بيانات لعبك إلى أي خادم تابع لنا، تبقى هذه البيانات محصورة في جهازك ومحمية بحمايته. ومع ذلك، لا توجد وسيلة نقل أو تخزين إلكترونية آمنة بنسبة 100%.</p>
+
+        <h2>11. التغييرات على هذه السياسة</h2>
+        <p>قد نحدّث هذه السياسة من وقت لآخر. سيُنشر أي تحديث على هذه الصفحة مع تعديل «تاريخ آخر تحديث» أعلاه، وننصحك بمراجعتها دورياً.</p>
+
+        <h2>12. اتصل بنا</h2>
+        <p>لأي سؤال أو طلب يتعلّق بالخصوصية أو بممارسة حقوقك:</p>
+        <p><strong>SAV Apps</strong><br>
+        البريد الإلكتروني: <a href="mailto:madanigfx@gmail.com">madanigfx@gmail.com</a></p>
+
+        <footer>© 2026 SAV Apps — جميع الحقوق محفوظة.</footer>
+    </div>
+
 </div>
+
+<script>
+(function () {
+    var buttons = document.querySelectorAll('.lang-switch button');
+    var panels = { en: document.getElementById('policy-en'),
+                   ar: document.getElementById('policy-ar') };
+
+    function setLang(lang) {
+        if (lang !== 'ar') { lang = 'en'; }
+        document.documentElement.lang = lang;
+        document.documentElement.dir = (lang === 'ar') ? 'rtl' : 'ltr';
+        panels.en.hidden = (lang !== 'en');
+        panels.ar.hidden = (lang !== 'ar');
+        for (var i = 0; i < buttons.length; i++) {
+            buttons[i].setAttribute('aria-pressed',
+                buttons[i].getAttribute('data-lang') === lang ? 'true' : 'false');
+        }
+        try { localStorage.setItem('policy_lang', lang); } catch (e) {}
+        if (history.replaceState) {
+            history.replaceState(null, '', '#' + lang);
+        }
+    }
+
+    for (var i = 0; i < buttons.length; i++) {
+        buttons[i].addEventListener('click', function () {
+            setLang(this.getAttribute('data-lang'));
+        });
+    }
+
+    // Priority: #ar / #en in the URL, then a saved choice, then device language.
+    var initial = null;
+    var hash = (location.hash || '').replace('#', '').toLowerCase();
+    if (hash === 'ar' || hash === 'en') {
+        initial = hash;
+    } else {
+        try { initial = localStorage.getItem('policy_lang'); } catch (e) {}
+        if (initial !== 'ar' && initial !== 'en') {
+            var nav = (navigator.language || 'en').toLowerCase();
+            initial = (nav.indexOf('ar') === 0) ? 'ar' : 'en';
+        }
+    }
+    setLang(initial);
+})();
+</script>
 
 </body>
 </html>
