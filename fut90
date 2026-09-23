@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>90 FUT — سياسة الخصوصية</title>
+<style>
+  :root { --bg: #ffffff; --fg: #1d242f; --muted: #5b6573; --accent: #3b9eff; --line: #e3e7ed; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #1d242f; --fg: #eef1f5; --muted: #a3adbb; --line: #2e3846; }
+  }
+  body { margin: 0; background: var(--bg); color: var(--fg);
+         font: 16px/1.75 system-ui, -apple-system, "Segoe UI", Tahoma, sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 1.6rem; margin: 0 0 4px; }
+  h2 { font-size: 1.15rem; margin: 28px 0 6px; }
+  p, li { color: var(--fg); }
+  .muted { color: var(--muted); font-size: .9rem; }
+  section[lang="en"] { direction: ltr; text-align: left; border-top: 1px solid var(--line);
+                       margin-top: 48px; padding-top: 24px; }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+<section>
+  <h1>سياسة الخصوصية لتطبيق 90 FUT</h1>
+  <p class="muted">آخر تحديث: 23 سبتمبر 2026</p>
+
+  <h2>باختصار</h2>
+  <p>لا يطلب تطبيق 90 FUT إنشاء حساب، ولا يجمع بيانات شخصية، ولا يحتوي على إعلانات أو أدوات تتبّع أو تحليلات.</p>
+
+  <h2>ما يُحفظ على جهازك</h2>
+  <p>يحفظ التطبيق تفضيلاتك على جهازك فقط: اللغة، والمظهر (فاتح أو داكن)، والأندية واللاعبين والبطولات التي تختارها، ونسخة مؤقتة من آخر النتائج لتظهر بسرعة. لا تُرسل هذه البيانات إلى أي خادم، وتُحذف عند حذف التطبيق أو مسح بياناته.</p>
+
+  <h2>الاتصال بالإنترنت</h2>
+  <p>يجلب التطبيق النتائج والأخبار والترتيب من خوادم Google Firebase. عند أي اتصال بالإنترنت يستقبل الخادم عنوان IP الخاص بجهازك ومعلومات تقنية عن الطلب، كما هو الحال مع أي موقع أو تطبيق. لا نستخدم هذه المعلومات لتحديد هويتك. راجع <a href="https://firebase.google.com/support/privacy">سياسة خصوصية Firebase</a>.</p>
+  <p>صور الأخبار تُحمَّل مباشرة من المواقع الإخبارية التي نشرتها، وعند فتح خبر ينتقل التطبيق إلى موقع الناشر في متصفحك. تخضع هذه المواقع لسياسات الخصوصية الخاصة بها.</p>
+
+  <h2>مصادر البيانات</h2>
+  <p>بيانات كرة القدم مقدمة من Football-Data.org و Sportmonks و KickoffAPI، والأخبار من GDELT ومواقع الأخبار الرياضية. يتصل خادمنا بهذه المصادر، ولا يتصل بها جهازك مباشرة.</p>
+
+  <h2>الأطفال</h2>
+  <p>التطبيق غير موجّه للأطفال دون 13 عاماً، ولا نجمع بيانات من أي مستخدم.</p>
+
+  <h2>التغييرات</h2>
+  <p>إذا تغيّرت هذه السياسة سننشر النسخة الجديدة في هذه الصفحة مع تاريخ التحديث.</p>
+
+  <h2>التواصل</h2>
+  <p>لأي سؤال عن الخصوصية راسلنا على: <a href="mailto:madanigfx@gmail.com">madanigfx@gmail.com</a></p>
+</section>
+
+<section lang="en">
+  <h1>90 FUT Privacy Policy</h1>
+  <p class="muted">Last updated: 23 September 2026</p>
+
+  <h2>In short</h2>
+  <p>90 FUT needs no account, collects no personal data, and contains no ads, trackers or analytics.</p>
+
+  <h2>What stays on your device</h2>
+  <p>The app stores your preferences on your device only: language, light or dark theme, the clubs, players and competitions you follow, and a cached copy of recent results so they appear quickly. None of this is sent to a server, and it is deleted when you uninstall the app or clear its data.</p>
+
+  <h2>Network access</h2>
+  <p>The app loads results, news and standings from Google Firebase. Like any website or app, the server receives your device's IP address and technical request details. We do not use them to identify you. See the <a href="https://firebase.google.com/support/privacy">Firebase privacy information</a>.</p>
+  <p>News images load directly from the publishers' sites, and opening a story takes you to the publisher's site in your browser. Those sites have their own privacy policies.</p>
+
+  <h2>Data sources</h2>
+  <p>Football data provided by Football-Data.org, Sportmonks and KickoffAPI. News from GDELT and sports news sites. Our server contacts these sources; your device does not.</p>
+
+  <h2>Children</h2>
+  <p>The app is not directed at children under 13, and we collect no data from any user.</p>
+
+  <h2>Changes</h2>
+  <p>If this policy changes, the new version will be posted on this page with its date.</p>
+
+  <h2>Contact</h2>
+  <p>Privacy questions: <a href="mailto:madanigfx@gmail.com">madanigfx@gmail.com</a></p>
+</section>
+</main>
+</body>
+</html>
